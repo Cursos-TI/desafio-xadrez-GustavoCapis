@@ -25,6 +25,20 @@ int main() {
         printf("Rainha andou para esquerda\n");
         i++; // Incrementa o contador para evitar um loop infinito
     }
+    
+    // Atribuíção de uma variável para simular movimento do cavalo, ela terá o trabalho de contar quantas vezes o cavalo irá se mexer
+    int movimentoCavalo = 1; // Atribuir o valor de 1 significa que o cavalo vai se movimentar apenas uma vez
+
+    printf("\nMovimentação do Cavalo\n"); // Pula uma linha
+
+    while (movimentoCavalo--) // Após executar com o valor inicial 1 o decremento transforma o valor da variável em 0 e o loop acaba
+    {
+        for (int i = 0; i < 2; i++) // A variável i tem o trabalho de dizer quantas casas o cavalo vai andar dentro dessa uma movimentação, nesse caso 2x
+        {
+            printf("Baixo \n"); // Imprime baixo 2x
+        }
+        printf("Esquerda \n"); // Imrpime esquerda apenas uma vez ao terminar o loop interno
+    }
 
     // Retorna 0 para indicar que o programa finalizou com sucesso
     return 0;
